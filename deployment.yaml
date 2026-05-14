@@ -1,25 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-deployment
-  
-
+ name: demo-deployment
 spec:
-  replicas: 3
-
-  selector:
-    matchLabels:
-      app: demo-app
-
-  template:
-    metadata:
-      labels:
-        app: demo-app
-
-    spec:
-      containers:
-      - name: demo-container
-        image: quay.io/gauravkumar9130/nginxdemo
-
-        ports:
-        - containerPort: 80
+ replicas: 3
+ selector:
+  matchLabels:
+   app: nginx
+ template:
+  metadata:
+   labels:
+    app: nginx
+  spec:
+   containers:
+   - name: nginx
+     image: quay.io/gauravkumar9130/nginxdemo
+     ports:
+     - containerPort: 80
