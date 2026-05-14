@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: demo-container
-        image: nginx:latest
+        image: quay.io/gauravkumar9130/nginxdemo
 
         ports:
         - containerPort: 80
