@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/your-username/your-repo.git
+    repoURL: https://github.com/kinley1998/argo.git
     targetRevision: HEAD
     path: manifests
 
